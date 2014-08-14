@@ -13,7 +13,9 @@ def is_divisible_by_fifteen?(number)
 end
 
 def fizzbuzz(number)
-	number = "fizz" if number % 3 == 0 else number = number
+	return 'FizzBuzz' if is_divisible_by_fifteen?(number)
+	return 'Fizz' if is_divisible_by_three?(number)
+	return 'Buzz' if is_divisible_by_five?(number)
 end
 
 
