@@ -27,8 +27,12 @@ describe 'fizzbuzz' do
 		expect(is_divisible_by_fifteen?(1)).to eq false
 	end
 
-	it "should return 'fizz' if a number is divisible by 3" do
+	it "should return 'fizz' for the number 3" do
 		expect(fizzbuzz(3)).to eq 'fizz'
+	end
+
+	it "should return 1 for the number 1" do
+		expect(fizzbuzz(1)).to eq 1
 	end
 
 end
